@@ -1,0 +1,23 @@
+.pager{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pager li{
+    text-decoration: none;
+}
+
+.inform{
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.pagination{
+    display: flex;
+    justify-content:center;
+}

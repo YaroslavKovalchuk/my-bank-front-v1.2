@@ -1,0 +1,25 @@
+<form class="form-inline" (submit)="addCountry($event); countryValue.value = ''">
+  <div class="form-group">
+    <div class="input-group">
+      <label>Country</label>
+      <input type="text" class="form-control my_amount" placeholder="Coutry name" #countryValue>
+      <input type="submit" class="btn btn-primary btn_transfer" value="Save country">
+    </div>
+  </div>
+</form>
+
+<form class="form-inline" (submit)="addCity($event);cityValue.value = '' ">
+  <div class="form-group">
+    <div class="input-group">
+      <label>City</label>
+      <input type="text" class="form-control my_amount" placeholder="City name" #cityValue>
+      <div class="form-group">
+        <select class="form-control option" #selectElem (change)="selectCountry(selectElem.value)">
+          <option>-</option>
+          <option *ngFor="let country of countries">{{country.name}}</option>
+        </select>
+      </div>
+      <input type="submit" class="btn btn-primary btn_transfer" value="Save city">
+    </div>
+  </div>
+</form>

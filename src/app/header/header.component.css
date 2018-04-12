@@ -1,0 +1,10 @@
+header div{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    border-bottom: 2px solid rgba(12, 60, 61, 0.699);
+}
+
+header a{
+    width: 100px;
+}

@@ -1,0 +1,71 @@
+<form class="form-horizontal" (submit)="singupUser($event)">
+
+  <div class="form-group">
+    <label class=" control-label">First name</label>
+    <input type="text" class="form-control" placeholder="First name">
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">Last name</label>
+    <input type="text" class="form-control" placeholder="Last name">
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">Age</label>
+    <input type="number" class="form-control" placeholder="Age">
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">Phone number</label>
+    <input type="text" class="form-control" placeholder="Phone number">
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">Country</label>
+    <select class="form-control" #selectElem (change)="selectCountry(selectElem.value)">
+      <option value="">-</option>
+      <option *ngFor="let country of countries">{{country.name}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">City</label>
+    <select class="form-control" id="city">
+      <option *ngFor="let city of cities">{{city.name}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">Email</label>
+    <input type="email" class="form-control" placeholder="Email">
+  </div>
+
+  <div class="form-group">
+    <label class=" control-label">Password</label>
+    <input type="password" class="form-control" placeholder="Password">
+  </div>
+
+  <div class="form-group">
+      <label class=" control-label">Confirm password</label>
+      <input type="password" class="form-control" placeholder="Password">
+    </div>
+
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Remember me
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-success btn-singin">Sign up</button>
+  </div>
+
+  <div class="form-group">
+    <h6> I'm logged in
+      <button type="submit" class="btn btn-link " routerLink="/">Sign in </button>
+    </h6>
+  </div>
+
+</form>

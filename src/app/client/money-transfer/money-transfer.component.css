@@ -1,0 +1,37 @@
+.input-group{
+    font-family: cursive;
+    margin: 20px;
+    margin-top: 100px;
+    background: grey;
+    padding: 40px;
+    border-radius: 10px;
+}
+.input-group input{ 
+    margin: 5px;
+    border-radius: 10px;
+}
+.input-group label{
+    font-family: fantasy;
+    font-size: 20px;
+    position: absolute;
+	top: 15px;
+	transform: translateY(-50%);
+    left: 300px;
+}
+.all-information {
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    height:450px;
+    width: 260px;
+    border-radius: 10px;
+    overflow-y: scroll;
+   
+    padding: 5px;
+}
+.information ol {
+   
+    background: #e3e8ee;
+    list-style:none;
+}

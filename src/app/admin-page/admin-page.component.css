@@ -1,0 +1,17 @@
+.admin-page{
+    display: flex;
+	flex-direction: column;
+    padding: 25px;
+    height: 500px;
+}
+.admin-operation{
+    border-bottom:  2px solid black;
+}
+
+.admin-operation a{
+    background: gray;
+    color: floralwhite;
+}
+router-outlet{
+    padding: 10px;
+}

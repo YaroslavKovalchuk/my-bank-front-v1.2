@@ -1,0 +1,22 @@
+:host {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-horizontal{
+    padding-top:100px;
+    width: 300px;
+    height: 520px;
+}
+.btn-singin{
+    width: 300px;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }

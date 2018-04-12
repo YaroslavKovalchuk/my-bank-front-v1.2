@@ -1,0 +1,36 @@
+<div class="all-information">
+  <div>
+    <form class="form-inline" (submit)="played($event); amount.value = ''; number.value = ''">
+      <div class="form-group">
+        <div class="input-group">
+          <label>Pay Deposit</label>
+          <input type="text" class="form-control my_amount" id="exampleInputAmount" placeholder="Сума" #amount>
+          <input type="text" class="form-control" placeholder="Номер депозиту" #number>
+          <input type="submit" class="btn btn-primary btn_transfer" value="Виконати переказ">
+        </div>
+      </div>
+    </form>
+
+    <form class="form-inline" (submit)="add($event); amount1.value = ''; rate.value = ''">
+      <div class="form-group">
+        <div class="input-group">
+          <label>Open Saving Account</label>
+          <input type="text" class="form-control my_amount" id="exampleInputAmount" placeholder="Сума" #amount1>
+          <input type="text" class="form-control" placeholder="Відсоток" #rate>
+          <input type="submit" class="btn btn-primary btn_transfer" value="Відкрити депозит">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card" scroll="yes">
+    <div class="information">
+      <ol *ngFor="let saving of savings">
+        <li>{{saving.cardNumber}} <a class="btn btn-outline-secondary btn-sm" (click) = "closed(saving.id)">X</a>
+          <br>{{saving.amount}}$
+          <br>{{saving.interestedRate}}%
+          <br>{{saving.dateTransfer}}
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

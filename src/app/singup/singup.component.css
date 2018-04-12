@@ -1,0 +1,11 @@
+:host {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-horizontal{
+    width: 400px;
+}
+.btn-singin{
+    width: 400px;
+}

@@ -1,0 +1,35 @@
+<div class="all-information">
+  <div>
+    <form class="form-inline" (submit)="played($event); amound.value = ''; number.value = ''">
+      <div class="form-group">
+        <div class="input-group">
+          <label>Pay Credit</label>
+          <input type="text" class="form-control my_amount" placeholder="Сума" #amound>
+          <input type="text" class="form-control my_cart_number" placeholder="Номер кредиту" #number>
+          <input type="submit" class="btn btn-primary btn_transfer" value="Виконати переказ">
+        </div>
+      </div>
+    </form>
+    <form class="form-inline" (submit)="add($event); amound1.value = ''; rate.value = ''">
+      <div class="form-group">
+        <div class="input-group">
+          <label>Open Credit Account</label>
+          <input type="text" class="form-control my_amount" placeholder="Сума" #amound1>
+          <input type="text" class="form-control my_cart_number" placeholder="Відсоток" #rate>
+          <input type="submit" class="btn btn-primary btn_transfer" value="Відкрити кредит">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card" scroll="yes">
+    <div class="information">
+      <ol *ngFor="let credit of credits">
+        <li>{{credit.cardNumber}}
+          <br> {{credit.amount}}$
+          <br> {{credit.interestedRate}}%
+          <br> {{credit.dateTransfer}}
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

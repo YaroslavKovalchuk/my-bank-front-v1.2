@@ -1,0 +1,16 @@
+<div class="personal-info">
+    <div class="personal-page" *ngIf = "client" >
+          <img [src]="myImage" alt="team" class="img-circle ava">
+            <input  type="file" name="file" id="file" class="inputfile" (change)="handleInputChange($event)" />
+            <label for="file" class="btn btn-info btn-lg">Upload</label>
+          <h6 >{{ client.personalInfoResponse.firtName}} {{client.personalInfoResponse.lastName}}</h6>
+          <h6>Balance -> {{account.balance}}$</h6>
+          <h6>Card#{{account.cardNumber}}</h6>
+<div class="operation-with-money">
+    <a (click) = "creditActive()" class="btn btn-link">Credit Account</a>
+    <a (click) = "savingActive()" class="btn btn-link">Saving Account</a>
+    <a (click) = "transferActive()" class="btn btn-link">Money Transfer</a>
+</div>
+  </div>
+<router-outlet></router-outlet>
+</div>

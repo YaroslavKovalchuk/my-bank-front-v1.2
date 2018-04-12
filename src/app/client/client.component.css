@@ -1,0 +1,55 @@
+.personal-info{
+    display: flex;
+	flex-direction: row;
+    padding: 25px;
+    height: 500px;
+    
+}
+.operation-with-money {
+    width: 150px;
+    padding: 25px;
+    margin-right: 25px;
+}
+.operation-with-money a{
+    border:  2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    width: 150px;
+    font-family: fantasy;
+}
+.operation-with-money :hover{
+    margin-left: 10px;
+}
+.personal-page{
+    border:  2px solid black;
+    border-radius: 10px;
+    width: 250px;
+    height: 450px;
+}
+.personal-page h6{
+    margin: 10px;
+ 
+    border-bottom:  2px solid black;
+}
+.ava{
+ 
+    padding: 2px;
+    max-height: 120px;
+  
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    margin-bottom: 80px;
+    font-size: 15px;
+
+}
+
